@@ -178,11 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/board.jpg')
       cards[optionTwoId].setAttribute('src', 'images/board.jpg')
-      alert('Você clicou na mesma imagem')
+     
     }
     //verificar combinação se click em imagens diferentes
     else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('Você encontrou uma combinação')
+   
       cards[optionOneId].setAttribute('src', 'images/check.jpg')
       cards[optionTwoId].setAttribute('src', 'images/check.jpg')
       cards[optionOneId].removeEventListener('click', flipCard)
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       cards[optionOneId].setAttribute('src', 'images/board.jpg')
       cards[optionTwoId].setAttribute('src', 'images/board.jpg')
-      alert('Errou, tente novamente')
+    
     }
     cardsChosen = []
     cardsChosenId = []
